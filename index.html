@@ -1,1 +1,225 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>macnic | Your trusted manufacturing partner</title>
+<meta name="description" content="macnic connects you with vetted vendors for CNC, VMC, laser cutting, CO2 cutting and molding, and stays responsible until inspected parts reach you.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@75..125,500..900&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#12161d;--bg2:#181d26;--line:#2a313d;--tx:#eef1f5;--mut:#9aa4b2;--y:#FCB026;--b:#3B82F6;color-scheme:dark;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-behavior:smooth;scroll-padding-top:84px;background:var(--bg)}
+body{margin:0;background:var(--bg);color:var(--tx);font:400 17px/1.6 "IBM Plex Sans",system-ui,sans-serif;overflow-x:hidden}
+h1,h2,h3{font-family:Archivo,"Arial Narrow",system-ui,sans-serif;font-stretch:90%;line-height:1.05;margin:0;letter-spacing:-.01em}
+h1{font-size:clamp(2.6rem,7vw,5.2rem);font-weight:800}
+h2{font-size:clamp(2rem,4.5vw,3.2rem);font-weight:800}
+h3{font-size:1.3rem;font-weight:700}
+p{margin:0}.mut{color:var(--mut)}
+.wrap{max-width:1180px;margin:0 auto;padding:0 22px}
+section{padding:96px 0}
+svg{display:block}.ic{width:30px;height:30px;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+header{position:sticky;top:0;z-index:20;background:rgba(18,22,29,.82);backdrop-filter:blur(12px);border-bottom:1px solid var(--line);padding-top:env(safe-area-inset-top,0px)}
+header .wrap{display:flex;align-items:center;justify-content:space-between;height:68px}
+.logo{display:flex;align-items:center;gap:10px;font:800 1.5rem Archivo,sans-serif;color:var(--tx);text-decoration:none}
+.logo b{color:var(--y);font-weight:800}
+nav{display:flex;gap:26px;align-items:center}nav a{color:var(--mut);text-decoration:none;font-size:.95rem;transition:color .2s}nav a:hover{color:var(--tx)}
+.btn{display:inline-flex;align-items:center;gap:8px;border:0;border-radius:10px;padding:14px 24px;font:600 1rem "IBM Plex Sans",sans-serif;cursor:pointer;text-decoration:none;transition:transform .2s,box-shadow .2s,background .2s}
+.btn.p{background:var(--y);color:#1a1405}.btn.p:hover{transform:translateY(-2px);box-shadow:0 10px 30px -8px rgba(252,176,38,.6)}
+.btn.s{background:transparent;color:var(--tx);box-shadow:inset 0 0 0 1.5px var(--b)}.btn.s:hover{background:rgba(59,130,246,.14)}
+a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:2px solid var(--y);outline-offset:3px}
+.hero{padding:70px 0 90px;position:relative;overflow:hidden}
+.hero::before{content:"";position:absolute;inset:0;background-image:linear-gradient(var(--line) 1px,transparent 1px),linear-gradient(90deg,var(--line) 1px,transparent 1px);background-size:56px 56px;opacity:.35;mask-image:radial-gradient(ellipse at 70% 40%,#000 10%,transparent 70%);animation:grid 24s linear infinite}
+@keyframes grid{to{background-position:56px 56px}}
+.hero .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center;position:relative}
+.hero h1 span{display:block;overflow:hidden}.hero h1 span i{display:block;font-style:normal;transform:translateY(110%);animation:up .9s cubic-bezier(.2,.8,.2,1) forwards}
+.hero h1 span:nth-child(2) i{animation-delay:.12s;color:var(--y)}.hero h1 span:nth-child(3) i{animation-delay:.24s}
+@keyframes up{to{transform:none}}
+.hero p.lead{margin:26px 0 34px;max-width:520px;font-size:1.15rem;color:var(--mut);opacity:0;animation:fade .8s .6s forwards}
+.hero .cta{display:flex;gap:14px;flex-wrap:wrap;opacity:0;animation:fade .8s .8s forwards}
+@keyframes fade{to{opacity:1}}
+.stage{position:relative;aspect-ratio:1;max-width:480px;margin:auto;width:100%}
+.stage svg{width:100%;height:100%}
+.g1{transform-origin:200px 210px;animation:spin 18s linear infinite}.g2{transform-origin:318px 118px;animation:spin 11s linear infinite reverse}
+@keyframes spin{to{transform:rotate(360deg)}}
+.scan{animation:scan 4.5s ease-in-out infinite}@keyframes scan{0%,100%{transform:translateY(0)}50%{transform:translateY(300px)}}
+.tag{position:absolute;right:2%;bottom:8%;background:var(--bg2);border:1px solid var(--line);border-radius:12px;padding:12px 16px;display:flex;gap:10px;align-items:center;font-size:.9rem;animation:fl 5s ease-in-out infinite}
+.tag .ic{width:22px;height:22px;color:#4ade80}@keyframes fl{50%{transform:translateY(-8px)}}
+.strip{border-block:1px solid var(--line);background:var(--bg2);overflow:hidden;padding:18px 0}
+.strip div{display:flex;gap:48px;width:max-content;animation:mq 34s linear infinite;font:700 1.15rem Archivo,sans-serif;color:var(--mut)}
+.strip span::after{content:"";display:inline-block;width:8px;height:8px;background:var(--y);border-radius:50%;margin-left:48px}
+@keyframes mq{to{transform:translateX(-50%)}}
+.head{max-width:640px;margin-bottom:56px}.head p{margin-top:16px;color:var(--mut)}
+.steps{position:relative;display:grid;gap:34px;padding-left:64px;max-width:760px}
+.steps::before,.steps .fill{content:"";position:absolute;left:21px;top:8px;bottom:8px;width:3px;background:var(--line);border-radius:3px}
+.steps .fill{background:linear-gradient(var(--y),var(--b));height:0;bottom:auto;transition:height .15s}
+.step{position:relative}.step .n{position:absolute;left:-64px;top:0;width:44px;height:44px;border-radius:50%;background:var(--bg);border:2px solid var(--line);display:grid;place-items:center;font:700 1rem Archivo,sans-serif;transition:.4s}
+.step.on .n{border-color:var(--y);color:var(--y);box-shadow:0 0 0 6px rgba(252,176,38,.12)}
+.step p{color:var(--mut);margin-top:6px;max-width:560px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:18px}
+.card{background:var(--bg2);border:1px solid var(--line);border-radius:14px;padding:28px;transition:transform .3s,border-color .3s}
+.card:hover{transform:translateY(-6px);border-color:var(--b)}
+.card .ic{color:var(--y);margin-bottom:18px;width:36px;height:36px}.card p{color:var(--mut);margin-top:8px;font-size:.96rem}
+.card small{display:block;margin-top:14px;color:var(--b);font-size:.86rem;font-weight:500}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.pane{border-radius:16px;padding:36px;border:1px solid var(--line)}
+.pane.c{background:linear-gradient(160deg,rgba(59,130,246,.16),var(--bg2))}.pane.v{background:linear-gradient(160deg,rgba(252,176,38,.14),var(--bg2))}
+.pane ul{list-style:none;padding:0;margin:20px 0 0;display:grid;gap:12px}
+.pane li{display:flex;gap:12px;color:var(--mut)}.pane li svg{flex:none;width:22px;height:22px;margin-top:2px;color:var(--y)}.pane.c li svg{color:var(--b)}
+.proof{background:var(--bg2);border-block:1px solid var(--line)}
+.ph{border:1.5px dashed var(--b);border-radius:14px;padding:28px;display:flex;gap:20px;align-items:center;margin-top:18px;background:rgba(59,130,246,.07)}
+.ph .ic{flex:none;width:44px;height:44px;color:var(--b)}
+.tabs{display:inline-flex;background:var(--bg2);border:1px solid var(--line);border-radius:12px;padding:5px;margin-bottom:28px}
+.tabs button{border:0;background:none;color:var(--mut);font:600 1rem "IBM Plex Sans",sans-serif;padding:12px 22px;border-radius:8px;cursor:pointer;transition:.25s}
+.tabs button[aria-selected=true]{background:var(--y);color:#1a1405}
+form{display:none;grid-template-columns:1fr 1fr;gap:16px;animation:fade .5s}form.show{display:grid}
+label{display:grid;gap:6px;font-size:.9rem;color:var(--mut)}label.w{grid-column:1/-1}
+input,select,textarea{width:100%;background:var(--bg2);border:1.5px solid var(--line);border-radius:10px;color:var(--tx);padding:13px 14px;font:inherit;transition:border-color .2s,box-shadow .2s}
+input:focus,select:focus,textarea:focus{border-color:var(--y);box-shadow:0 0 0 4px rgba(252,176,38,.15);outline:0}
+textarea{min-height:96px;resize:vertical}
+.acts{grid-column:1/-1;display:flex;gap:12px;flex-wrap:wrap;align-items:center}.err{color:#f87171;font-size:.9rem}
+footer{border-top:1px solid var(--line);padding:56px 0 40px}footer .wrap{display:flex;justify-content:space-between;gap:32px;flex-wrap:wrap}
+footer a{color:var(--tx);text-decoration:none}footer a:hover{color:var(--y)}footer p{color:var(--mut);margin-top:8px}
+.rv{opacity:0;transform:translateY(24px);transition:opacity .7s,transform .7s}.rv.in{opacity:1;transform:none}
+.wa{position:fixed;right:18px;bottom:calc(18px + env(safe-area-inset-bottom,0px));z-index:30;width:56px;height:56px;border-radius:50%;background:#25D366;display:grid;place-items:center;box-shadow:0 8px 24px rgba(0,0,0,.4);transition:transform .2s}.wa:hover{transform:scale(1.08)}.wa svg{width:28px;height:28px;fill:#fff}
+@media(max-width:860px){nav a:not(.btn){display:none}.hero .wrap,.two{grid-template-columns:1fr}section{padding:72px 0}.stage{max-width:340px}form{grid-template-columns:1fr}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}.hero h1 span i,.hero p.lead,.hero .cta,.rv{opacity:1;transform:none}}
+</style></head><body>
+<svg width="0" height="0" style="position:absolute"><defs>
+<symbol id="cnc" viewBox="0 0 24 24"><path d="M12 3l8 4.5v9L12 21l-8-4.5v-9z"/><path d="M12 12l8-4.5M12 12v9M12 12L4 7.5"/></symbol>
+<symbol id="vmc" viewBox="0 0 24 24"><path d="M9 3h6M12 3v10M9 13h6l-3 8z"/><path d="M4 21h16"/></symbol>
+<symbol id="las" viewBox="0 0 24 24"><path d="M13 2L5 14h6l-1 8 8-12h-6z"/></symbol>
+<symbol id="co2" viewBox="0 0 24 24"><path d="M3 9c3-3 6 3 9 0s6 3 9 0M3 15c3-3 6 3 9 0s6 3 9 0"/></symbol>
+<symbol id="mold" viewBox="0 0 24 24"><rect x="4" y="3" width="16" height="7" rx="1"/><rect x="4" y="14" width="16" height="7" rx="1"/><path d="M12 10v4"/></symbol>
+<symbol id="spr" viewBox="0 0 24 24"><path d="M6 4h12M6 8h12M6 12h12M6 16h12M6 20h12M6 4c-2 2 2 2 0 4s2 2 0 4 2 2 0 4 2 2 0 4"/></symbol>
+<symbol id="sft" viewBox="0 0 24 24"><rect x="2" y="9" width="20" height="6" rx="1"/><path d="M7 9v6M17 9v6M11 9v6"/></symbol>
+<symbol id="gear" viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M5 5l2 2M17 17l2 2M19 5l-2 2M7 17l-2 2"/></symbol>
+<symbol id="ok" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M8 12.5l3 3 5-6"/></symbol>
+<symbol id="doc" viewBox="0 0 24 24"><path d="M6 2h9l4 4v16H6z"/><path d="M14 2v5h5M9 13h7M9 17h7"/></symbol>
+</defs></svg>
+<header><div class="wrap">
+<a class="logo" href="#top" aria-label="macnic home"><svg class="ic" style="stroke:var(--y)"><use href="#gear"/></svg>mac<b>nic</b></a>
+<nav><a href="#how">How it works</a><a href="#make">What we make</a><a href="#proof">Proof</a><a class="btn p" href="#contact" style="padding:10px 18px">Get started</a></nav>
+</div></header>
+<main id="top">
+<section class="hero"><div class="wrap">
+<div><h1><span><i>Your trusted</i></span><span><i>manufacturing</i></span><span><i>partner.</i></span></h1>
+<p class="lead">Tell us what you need made. We choose the right vendor, stay on the job through production, and send you parts that a third-party inspector has checked.</p>
+<div class="cta"><a class="btn p" href="#contact">Get a quote</a><a class="btn s" href="#contact" data-tab="vendor">Join as a vendor</a></div></div>
+<div class="stage" aria-hidden="true"><svg viewBox="0 0 400 420">
+<g stroke="var(--b)" fill="none" stroke-width="2"><path class="g1" d="M200 110l16 6 16-6 8 16 17 5-2 18 12 12-9 15 5 17-17 8-4 17-18-2-13 12-13-12-18 2-4-17-17-8 5-17-9-15 12-12-2-18 17-5 8-16z" transform="translate(0 0)"/><circle cx="200" cy="210" r="34" stroke="var(--b)"/></g>
+<g stroke="var(--y)" fill="none" stroke-width="2.5"><g class="g2"><path d="M318 78l10 4 10-4 5 10 11 3-1 12 8 8-6 10 3 11-11 5-3 11-12-1-9 8-9-8-12 1-3-11-11-5 3-11-6-10 8-8-1-12 11-3 5-10z"/><circle cx="318" cy="118" r="18"/></g></g>
+<g stroke="var(--mut)" stroke-width="1.5" fill="none" opacity=".6"><path d="M60 360h280M60 352v16M340 352v16M200 352v16"/><path d="M80 40h40M80 40v40"/></g>
+<g class="scan"><rect x="50" y="60" width="300" height="3" fill="var(--y)" opacity=".9"/><rect x="50" y="63" width="300" height="38" fill="url(#sg)" opacity=".5"/></g>
+<defs><linearGradient id="sg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FCB026" stop-opacity=".5"/><stop offset="1" stop-color="#FCB026" stop-opacity="0"/></linearGradient></defs></svg>
+<div class="tag"><svg class="ic"><use href="#ok"/></svg>Inspected before dispatch</div></div>
+</div></section>
+<div class="strip" aria-hidden="true"><div><span>CNC machining</span><span>VMC milling</span><span>Laser cutting</span><span>CO2 cutting</span><span>Injection molding</span><span>CNC machining</span><span>VMC milling</span><span>Laser cutting</span><span>CO2 cutting</span><span>Injection molding</span></div></div>
+
+<section id="how"><div class="wrap">
+<div class="head rv"><h2>You give the order. We run everything else.</h2><p>One point of contact from your drawing to the delivered part.</p></div>
+<div class="steps" id="steps"><div class="fill"></div>
+<div class="step"><div class="n">1</div><h3>You share your requirement</h3><p>Send a drawing, a sample or just an idea. Tell us the material, quantity and date you need.</p></div>
+<div class="step"><div class="n">2</div><h3>We select the right vendor</h3><p>We match the job to a vendor with the right machines, capacity and track record.</p></div>
+<div class="step"><div class="n">3</div><h3>The vendor manufactures</h3><p>Production happens at the vendor’s shop. We follow progress and handle every question.</p></div>
+<div class="step"><div class="n">4</div><h3>A third party inspects</h3><p>An independent inspector checks the parts and issues a report. You see it before you accept the delivery.</p></div>
+<div class="step"><div class="n">5</div><h3>We deliver</h3><p>Checked parts arrive at your door. You deal with macnic only.</p></div>
+</div></div></section>
+
+<section id="make" class="proof"><div class="wrap">
+<div class="head rv"><h2>What we get made for you</h2><p>Industrial metal and plastic parts, from one piece to regular batches.</p></div>
+<div class="grid">
+<div class="card rv"><svg class="ic"><use href="#cnc"/></svg><h3>CNC machining</h3><p>Turned and milled parts with tight tolerances.</p><small>MS, SS 304/316, aluminium, brass, alloy steel</small></div>
+<div class="card rv"><svg class="ic"><use href="#vmc"/></svg><h3>VMC milling</h3><p>Complex 3D shapes, plates, fixtures and housings.</p><small>MS, aluminium, SS, cast iron</small></div>
+<div class="card rv"><svg class="ic"><use href="#las"/></svg><h3>Laser cutting</h3><p>Clean, accurate profiles from sheet metal.</p><small>MS, SS, aluminium, galvanised sheet</small></div>
+<div class="card rv"><svg class="ic"><use href="#co2"/></svg><h3>CO2 cutting</h3><p>Precise cuts and engraving in non-metals.</p><small>Acrylic, MDF, plywood, rubber, fabric</small></div>
+<div class="card rv"><svg class="ic"><use href="#mold"/></svg><h3>Molding</h3><p>Plastic parts in volume from a made mold.</p><small>ABS, PP, nylon, PC, HDPE</small></div>
+
+
+</div></div></section>
+
+<section><div class="wrap">
+<div class="head rv"><h2>Built for both sides of the table</h2></div>
+<div class="two">
+<div class="pane c rv"><h3>If you need parts made</h3><ul>
+<li><svg class="ic"><use href="#ok"/></svg>One partner instead of chasing many shops.</li>
+<li><svg class="ic"><use href="#ok"/></svg>Every order inspected by a third party.</li>
+<li><svg class="ic"><use href="#ok"/></svg>We take responsibility for the manufacturing. You pay and receive.</li></ul></div>
+<div class="pane v rv"><h3>If you own a workshop</h3><ul>
+<li><svg class="ic"><use href="#ok"/></svg>More orders for the machines you already run.</li>
+<li><svg class="ic"><use href="#ok"/></svg>No marketing or customer hunting on your side.</li>
+<li><svg class="ic"><use href="#ok"/></svg>Regular customers and repeat work.</li></ul></div>
+</div></div></section>
+
+<section id="proof" class="proof"><div class="wrap">
+<div class="head rv"><h2>Proof, not promises</h2><p>We are new, so we show our work. Here is what you can hold us to on every order.</p></div>
+<div class="grid">
+<div class="card rv"><svg class="ic"><use href="#doc"/></svg><h3>Inspection report</h3><p>An independent report comes with every delivery.</p></div>
+<div class="card rv"><svg class="ic"><use href="#ok"/></svg><h3>One owner of the job</h3><p>If something goes wrong, you call us, not the vendor.</p></div>
+<div class="card rv"><svg class="ic"><use href="#gear"/></svg><h3>Vetted vendors</h3><p>We check machines, capacity and past work before we assign a job.</p></div>
+</div>
+<div class="ph rv"><svg class="ic"><use href="#doc"/></svg><div><h3>Our first case studies appear here</h3><p class="mut">Real orders with the drawing, the inspection report and the delivered part.</p></div></div>
+</div></section>
+
+<section id="contact"><div class="wrap">
+<div class="head rv"><h2>Let’s talk about your job</h2><p>Fill the short form. We reply on WhatsApp or email and set up a meeting.</p></div>
+<div class="tabs" role="tablist"><button role="tab" id="tc" aria-selected="true" data-t="customer">I need parts made</button><button role="tab" id="tv" aria-selected="false" data-t="vendor">I’m a vendor</button></div>
+<form id="customer" class="show" data-kind="Quote request">
+<label>Your name*<input name="Name" required autocomplete="name"></label>
+<label>Company<input name="Company" autocomplete="organization"></label>
+<label>Phone / WhatsApp*<input name="Phone" type="tel" required autocomplete="tel"></label>
+<label>Email<input name="Email" type="email" autocomplete="email"></label>
+<label>What do you need made?*<input name="Part" required placeholder="e.g. 500 shafts, 20 mm dia"></label>
+<label>Process<select name="Process"><option>Not sure</option><option>CNC machining</option><option>VMC milling</option><option>Laser cutting</option><option>CO2 cutting</option><option>Molding</option></select></label>
+<label>Material<input name="Material" placeholder="e.g. MS, SS 304, ABS"></label>
+<label>Quantity<input name="Quantity" placeholder="One-off or per month"></label>
+<label>Drawing or design<select name="Drawing"><option>I have a drawing</option><option>I have a sample</option><option>I only have an idea</option></select></label>
+<label>Needed by<input name="Needed by" type="date"></label>
+<label>Delivery city<input name="City"></label>
+<label>Order type<select name="Order type"><option>One-time</option><option>Regular</option></select></label>
+<label class="w">More details<textarea name="Details" placeholder="Tolerance, finish, standards, anything else"></textarea></label>
+<div class="acts"><button class="btn p" type="button" data-send="wa">Send on WhatsApp</button><button class="btn s" type="button" data-send="mail">Send by email</button><span class="err" role="alert"></span></div>
+</form>
+<form id="vendor" data-kind="Vendor registration">
+<label>Owner name*<input name="Owner" required></label>
+<label>Company name*<input name="Company" required></label>
+<label>Phone / WhatsApp*<input name="Phone" type="tel" required></label>
+<label>Email<input name="Email" type="email"></label>
+<label>City and area<input name="Location"></label>
+<label>GST number<input name="GST"></label>
+<label>Processes you do<input name="Processes" placeholder="e.g. CNC, VMC, laser"></label>
+<label>Materials you work with<input name="Materials"></label>
+<label>Workers<input name="Workers" inputmode="numeric"></label>
+<label>Monthly capacity<input name="Capacity" placeholder="Parts or machine hours"></label>
+<label>Certifications<input name="Certifications" placeholder="ISO, etc. or none"></label>
+<label>Main customers<input name="Customers"></label>
+<label class="w">Machines (type, count, size)<textarea name="Machines"></textarea></label>
+<div class="acts"><button class="btn p" type="button" data-send="wa">Send on WhatsApp</button><button class="btn s" type="button" data-send="mail">Send by email</button><span class="err" role="alert"></span></div>
+</form>
+</div></section>
+</main>
+<footer><div class="wrap">
+<div><a class="logo" href="#top"><svg class="ic" style="stroke:var(--y)"><use href="#gear"/></svg>mac<b>nic</b></a><p>Your trusted manufacturing partner.</p></div>
+<div><p>Akurdi, Pune 412101, Maharashtra, India</p><p><a href="tel:+919277320511">+91 92773 20511</a></p><p><a href="mailto:swatantra.nishadd@gmail.com">swatantra.nishadd@gmail.com</a></p></div>
+</div></footer>
+<a class="wa" href="https://wa.me/919277320511" aria-label="Chat on WhatsApp"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 00-8.6 15L2 22l5.2-1.4A10 10 0 1012 2zm5.2 14.2c-.2.6-1.2 1.1-1.7 1.2-.5.1-1 .1-3.2-.7-2.700-1.100-4.400-3.800-4.600-4-.1-.2-1.100-1.400-1.100-2.700s.7-1.900.9-2.200c.2-.2.5-.3.700-.3h.5c.2 0 .4 0 .6.500l.8 2c.1.200.1.400 0 .5l-.4.600c-.1.100-.3.300-.1.500.5.900 1.200 1.600 2 2.100.8.500 1.300.600 1.500.400l.600-.8c.2-.2.400-.2.600-.1l1.900.9c.2.100.4.200.4.300.1.200.1.800-.1 1.400z"/></svg></a>
+<script>
+(function(){
+var NUM="919277320511",MAIL="swatantra.nishadd@gmail.com";
+var io=new IntersectionObserver(function(e){e.forEach(function(x){if(x.isIntersecting){x.target.classList.add("in");io.unobserve(x.target)}})},{threshold:.15});
+document.querySelectorAll(".rv").forEach(function(el,i){el.style.transitionDelay=(i%4)*70+"ms";io.observe(el)});
+var steps=document.getElementById("steps"),fill=steps.querySelector(".fill"),items=steps.querySelectorAll(".step");
+function prog(){var r=steps.getBoundingClientRect(),vh=innerHeight*.6,p=Math.max(0,Math.min(r.height,vh-r.top));fill.style.height=p+"px";items.forEach(function(s){s.classList.toggle("on",s.getBoundingClientRect().top<vh)})}
+addEventListener("scroll",prog,{passive:true});addEventListener("resize",prog);prog();
+function tab(t){document.querySelectorAll(".tabs button").forEach(function(b){b.setAttribute("aria-selected",b.dataset.t===t)});document.querySelectorAll("form").forEach(function(f){f.classList.toggle("show",f.id===t)})}
+document.querySelectorAll(".tabs button").forEach(function(b){b.onclick=function(){tab(b.dataset.t)}});
+document.querySelectorAll("[data-tab]").forEach(function(a){a.addEventListener("click",function(){tab(a.dataset.tab)})});
+document.querySelectorAll("[data-send]").forEach(function(b){b.onclick=function(){
+var f=b.closest("form"),err=f.querySelector(".err");
+if(!f.checkValidity()){err.textContent="Please fill the fields marked with *.";f.reportValidity();return}
+err.textContent="";var t="macnic: "+f.dataset.kind+"\n";
+new FormData(f).forEach(function(v,k){if(String(v).trim())t+=k+": "+v+"\n"});
+if(b.dataset.send==="wa")window.open("https://wa.me/"+NUM+"?text="+encodeURIComponent(t),"_blank");
+else location.href="mailto:"+MAIL+"?subject="+encodeURIComponent("macnic: "+f.dataset.kind)+"&body="+encodeURIComponent(t)}});
+})();
+</script></body></html>
 
